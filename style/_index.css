@@ -1,0 +1,158 @@
+/*
+ * 外部字符字体引入
+ */
+@font-face {
+    font-family: 'iconfont';
+    src: url('fonts/iconfont.eot'); /* IE9*/
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'writehand';
+    src: url('fonts/writehand.TTF') format('truetype');
+}
+
+/*
+ * 字符图标类
+ */
+.iconfont{
+    font-family: "iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * css reset start
+ */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*
+ * css reset end
+ */
+
+/*
+ * body start
+ */
+body {
+    width: 220px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.005);
+}
+/*
+ * body end
+ */
+
+/*
+ * header start
+ */
+header {
+    width: 220px;
+    height: 30px;
+    background-color: rgba(134, 133, 133, 0.3);
+    color: #FFF;
+    font-size: 30px;
+    line-height: 30px;
+    position: relative;
+    top: -30px;
+}
+header.headerShow {
+    top: 0;
+    transition: top 0.5s;
+    -moz-transition: top 0.5s;	/* Firefox 4 */
+    -webkit-transition: top 0.5s;	/* Safari 和 Chrome */
+    -o-transition: top 0.5s;	/* Opera */
+}
+header i {
+    display: inline-block;
+}
+header i:first-child {
+    margin-left: 10px;
+}
+header i:last-child {
+    float: right;
+    margin-right: 10px;
+}
+header i:nth-of-type(2) {
+    margin-left: 45px;
+}
+header i:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+/*
+ * header end
+ */
+
+
+/*
+ * note start
+ */
+.note {
+    width: 200px;
+    height: 200px;
+    margin: 35px auto;
+    background: -webkit-linear-gradient(top, #b9d7f5, #81bcf6);   /*Safari5.1 Chrome 10+*/
+    box-shadow: 6px 6px 6px #888;
+}
+/* .note .top start */
+.note .top {
+    height: 30px;
+    background-color: #74b6f9;
+    /*字符内容样式*/
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFF;
+    position: relative;
+}
+.note .top p {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+.note .top i {
+    display: inline-block;
+    margin: 0 10px;
+}
+.note .top i:last-child {
+    float: right;
+    /* 对号图标位置向上修正 */
+    position: relative;
+    top: -3px;
+}
+.note .top i:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+/* .note .top end */
+
+/* .note .content start */
+.note .content {
+    padding: 10px 20px;
+    color: #383838;
+    font-family: writehand;
+}
+.note .content p {
+    height: 25px;
+    line-height: 25px;
+}
+/* .note .content end */
+ /*
+  * note end
+  */
