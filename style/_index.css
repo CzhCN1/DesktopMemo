@@ -104,7 +104,7 @@ header i:hover {
     height: 200px;
     margin: 35px auto;
     background: -webkit-linear-gradient(top, #b9d7f5, #81bcf6);   /*Safari5.1 Chrome 10+*/
-    box-shadow: 6px 6px 6px #888;
+    box-shadow: 1px 6px 6px #888;
 }
 /* .note .top start */
 .note .top {
@@ -132,9 +132,6 @@ header i:hover {
 }
 .note .top i:last-child {
     float: right;
-    /* 对号图标位置向上修正 */
-    position: relative;
-    top: -3px;
 }
 .note .top i:hover {
     color: rgba(255, 255, 255, 0.5);
@@ -144,15 +141,31 @@ header i:hover {
 
 /* .note .content start */
 .note .content {
+    height: 150px;
     padding: 10px 20px;
     color: #383838;
     font-family: writehand;
+    overflow: hidden;
 }
-.note .content p {
-    height: 25px;
-    line-height: 25px;
+.note .content p,del {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.note .content p:hover,del:hover {
+    transform: scale(1.05);
+}
+/* 修正字体数字不同宽的瑕疵  */
+.note .content span{
+    display: inline-block;
+    width: 16px;
+}
+.note .content .hasMark{
+    color: #da3c3c;
 }
 /* .note .content end */
+
  /*
   * note end
   */
